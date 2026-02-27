@@ -4,12 +4,11 @@ import sys
 
 
 def main() -> None:
-    print("=== CYBER ARCHIVES - COMMUNICATION SYSTEM ===")
+    print("=== CYBER ARCHIVES - COMMUNICATION SYSTEM ===\n")
 
     # 1.- std input
     print("Input Stream active. Enter archivist ID: ", end="")
     archivist_id = input()
-    print()
     print("Input Stream active. Enter status report: ", end="")
     status_report = input()
     print()
@@ -25,10 +24,10 @@ def main() -> None:
             "Communication channels verified\n")
 
     # End message (stdout)
-    print("[STANDARD] Data transmission complete")
+    sys.stdout.write("[STANDARD] Data transmission complete\n")
 
     # Confirmation end message (stdout)
-    print("Three-channel communication test successful.")
+    print("\nThree-channel communication test successful.")
 
 
 if __name__ == "__main__":

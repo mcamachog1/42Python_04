@@ -13,7 +13,7 @@ def read_file(file_name: str) -> None:
             else:
                 print("[WARNING] Vault is empty. No data recovered.")
             print("\nSECURE PRESERVATION:")
-            f.write("[CLASSIFIED] New security protocols archived")
+            f.write("\n[CLASSIFIED] New security protocols archived")
             print("[CLASSIFIED] New security protocols archived")
             print("Vault automatically sealed upon completion\n")
     except FileNotFoundError:
