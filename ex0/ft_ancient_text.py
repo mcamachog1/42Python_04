@@ -22,7 +22,6 @@ def read_ancient_text(file_name: str) -> None:
 
 def main() -> None:
     file_name = "../test_files/ancient_fragment.txt"
-    # file_name = "../test_files/a.txt"
     read_ancient_text(file_name)
 
 
