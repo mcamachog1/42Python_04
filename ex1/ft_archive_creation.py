@@ -12,8 +12,9 @@ def exist_file(file_name: str) -> bool:
 
 def create_file(file_name: str) -> None:
     if exist_file(file_name):
-        print(f"The file '{file_name}' already exists. No action taken.")
-        return
+        print(
+            f"The file '{file_name}' already exists,"
+            "it will be overwritten.")
     print(f"Initializing new storage unit: {file_name}")
     try:
         f = open(file_name, "w")
@@ -42,7 +43,7 @@ def create_file(file_name: str) -> None:
 
 
 def main() -> None:
-    file_name = "../test_files/new_discovery.txt"
+    file_name = "../new_discovery.txt"
     print("=== CYBER ARCHIVES - PRESERVATION SYSTEM ===\n")
     create_file(file_name)
 
